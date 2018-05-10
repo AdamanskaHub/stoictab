@@ -1,0 +1,100 @@
+html {
+    height: 100%;
+    background: linear-gradient(to bottom right,#238383, #6A2A80);
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    width:80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    /* */
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.quotes{
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.mainQuote {
+    width: 80%;
+    max-width: 680px;
+    margin: 0 auto;
+    align-content: center;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+}
+
+#toptop{
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    font-family: 'Permanent Marker', cursive;
+    color:#002b2a;
+    /* background-color: rgba(0,0,0,0.34); */
+    padding:15px;
+    align-self: flex-start;    
+    margin-top: 10px;
+}
+
+#quoteType{
+    font-size: 1.6em;
+    font-family: 'PT Serif', serif;
+    color:#4FE8E6;
+    background-color: rgba(0,0,0,0.34);
+    padding:15px;
+    align-self: flex-start;    
+    margin-top: 10px;
+}
+
+
+
+#quoteSrc{
+    align-self: flex-end;
+    font-family: 'Raleway', sans-serif;
+    color: #fdd6b570;
+    background-color: #00000054;
+    padding: 0 4px;
+}
+
+#bigContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.box {
+    padding: 15px;
+    width: 30%;
+    background-color: #00000017;
+    -webkit-box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.71);
+    -moz-box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.71);
+    box-shadow: 7px 7px 0px 0px #210013;
+}
+.boxTitle {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #4ee9e6;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+#negVisu, #discomfort{
+    color: #fff;
+    font-size: 1.1em;
+}
+/*
+.mainQuote:before {
+    content: open-quote;
+}
+.mainQuote:after {
+    content: close-quote;
+} */
+
+p {
+    color:#333;
+}
