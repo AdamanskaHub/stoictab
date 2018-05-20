@@ -13,23 +13,48 @@
 <body>
 
   <div class="mainQuote">
-  <span id="toptop">Tout va bien parce que j'ai un plan</span>
-  <span id="quoteType"></span>
+    <span id="toptop">Tout va bien parce que j'ai un plan</span>
+    <span id="quoteType"></span>
     <span id="quoteSrc"></span>
   </div>
-  <div id="bigContainer">
-    <div class="box">
-      <h3 class="boxTitle">Negative Visualisation</h3>
-      <span id="negVisu"></span>
+
+  <div class="megacontainer">
+    <div class="focus">
+      <span id="focusText">What should I focus on now</span>
+      <input type="text" id="focusInput">
     </div>
-    <div class="box">
+
+    <div id="bigContainer">
+      <div class="box">
+        <h3 class="boxTitle">Negative Visualisation</h3>
+        <span id="negVisu"></span>
+      </div>
+      <div class="box">
         <h3 class="boxTitle">Voluntary Discomfort</h3>
         <span id="discomfort"></span>
       </div>
+      <div class="box">
+        <h3 class="boxTitle">How have I improved today?</h3>
+        <input type="text" id="improved">
+      </div>
+      <div class="box">
+        <h3 class="boxTitle">One thing you're too attached to:</h3>
+        <input type="text" id="tooAttached">
+      </div>
+      <div class="box">
+        <h3 class="boxTitle">One thing making suffer currently:</h3>
+        <input type="text" id="suffering">
+        <h3 class="boxTitle" id"sufferingAnswer"></h3>
+        <h3 class="boxTitle">It's an opportunity to practice:</h3>
+        <input type="text" id="sufferingPractice">
+      </div>
+      </div>
+
   </div>
 
 </body>
 <script src="stoic.js"></script>
+<script src="stoicStorage.js"></script>
 
 </html>
 <!-- <i class="fa fa-quote-left quotemark"></i> -->

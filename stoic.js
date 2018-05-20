@@ -58,7 +58,7 @@ $(document).ready(function(){
         author: "Seneca"
       },
       {
-        quote: "Remember that all we have is \"on loan\" from Fortune, which can reclaim it without our permission - indeed, without even advance notice. Thus, we should love all our dear ones, but always with the thought that we have no promise that we may keep them forever - nay, no promise even that we may keep them for long.",
+        quote: "Remember that all we have is \"on loan\" from Fortune, which can reclaim it without our permission. Thus, we should love all our dear ones, but always with the thought that we have no promise that we may keep them forever - nay, no promise even that we may keep them for long.",
         author: "Seneca"
       },
       {
@@ -73,7 +73,7 @@ $(document).ready(function(){
         quote: "Even the least of our activities ought to have some end in view.",
         author: "Marcus Aurelius"
       },
-      {quote:"Remember, it is not enough to be hit or insulted to be harmed, you must believe that you are being harmed. If someone succeeds in provoking you, realize that your mind is complicit in the provocation. Which is why it is essential that we not respond impulsively to impressions; take a moment before reacting, and you will find it easier to maintain control.",
+      {quote:"Remember, it is not enough to be hit or insulted to be harmed, you must believe that you are being harmed. If someone succeeds in provoking you, realize that your mind is complicit in the provocation.",
       author: "Epictetus"},
       {quote:"Soon, you will have forgotten everything. Soon, everybody will have forgotten you.", author:"Marcus Aurelius"},
     ];
@@ -91,6 +91,8 @@ $(document).ready(function(){
     var negative = [
       {
         quote: "How it would feel to lose a loved one?",       
+      },{
+        quote: "How it would feel to have your next big event failing?", 
       },{
         quote: "How it would feel to have a physical disability?", 
       },{
@@ -127,6 +129,8 @@ $(document).ready(function(){
         quote: "No treats.", 
       },{
         quote: "Hard physical exercice.", 
+      },{
+        quote: "Ask for a discount.", 
       },
     ];
     

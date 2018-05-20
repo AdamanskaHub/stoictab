@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+    /* height: 100%; */
     background: linear-gradient(to bottom right,#238383, #6A2A80);
     font-family: 'Raleway', sans-serif;
 }
@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10px auto;
+    margin-bottom: 30px;
     /* */
     font-family: 'Montserrat', sans-serif; 
 }
@@ -61,15 +62,56 @@ body {
     padding: 0 4px;
 }
 
+.megacontainer {
+    display: flex;
+    /* width: 80%; */
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+/* ======== FOCUS ========= */
+.focus {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#focusText {
+    color:#ffffff70;
+    font-size: 1.25em;
+}
+
+input {
+    width: 80%; 
+    /* 370px; */
+    background-color: #00000054;
+    border-style: none;
+    height: 30px;
+    border: 2px solid #00000038;
+    font-size: 1.3em;
+    color: #FDD6B5;;
+    padding: 0 10px;
+}
+
+input:focus {outline: none;}
+
+/* ======== ROW ONE ========= */
+
 #bigContainer {
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    flex-wrap: wrap;
 }
 
 .box {
     padding: 15px;
-    width: 30%;
+    width: 45%;
+    margin-bottom: 20px;
     background-color: #00000017;
     -webkit-box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.71);
     -moz-box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.71);
@@ -87,14 +129,11 @@ body {
     color: #fff;
     font-size: 1.1em;
 }
-/*
-.mainQuote:before {
-    content: open-quote;
-}
-.mainQuote:after {
-    content: close-quote;
-} */
 
 p {
     color:#333;
+}
+
+#improved {
+    width:80%;
 }
