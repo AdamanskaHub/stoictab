@@ -1,28 +1,129 @@
 // STORING STUFF !!!!!
 
-$(document).ready(function(){
-  
+$(document).ready(function () {
+  var d = new Date();
+  var dd = d.getMinutes();
+
+  function storeTime() {
+    console.log("setting time")
+    localStorage.setItem('time',dd);
+  }
+
+  !localStorage.getItem('time') ? storeTime() : isDateTheSame();
+
+  function isDateTheSame() {
+    var e = new Date();
+    var ee = e.getMinutes();
+    if (ee == localStorage.getItem('time')) {
+      console.log("still the same day")
+    } else {
+      console.log("different day");
+      localStorage.clear();
+      storeTime();
+    }
+  }
+
+// ========= SUFFERING ======== // 
+
   $('#sufferingBoxTwo').hide();
 
-  const focusInput = document.getElementById('focusInput');
-
-  // const answerSuffering = (text) => {
-  //   const h3 = document.createElement('h3');
-  //   h3.textContent = text;
-  //   // document.getElementById("sufferingAnswer").appendChild(h3);
-  //   document.getElementById("suffering").remove();
-  // }
-
-  
-  document.getElementById("sufferingButton").addEventListener("click", function(){
+  document.getElementById("sufferingButton").addEventListener("click", function () {
     var blaSuffering = $('#suffering').val();
-    console.log(blaSuffering);
-    $( "#sufferingBox" ).append( "<h3>Test</h3>" ).text(blaSuffering);
-    // answerSuffering(document.getElementById("suffering").val);
+    $("#sufferingBox").append("<h3>Test</h3>").text(blaSuffering);
+    localStorage.setItem('suffering', blaSuffering);
     $("#suffering").remove();
     $("#sufferingButton").remove();
     $('#sufferingBoxTwo').show();
   });
 
+  function putSufferingBack() {
+    $("#sufferingBox").append("<h3>Test</h3>").text(localStorage.getItem('suffering'));
+    $("#suffering").remove();
+    $("#sufferingButton").remove();
+    $('#sufferingBoxTwo').show();
+  }
+
+  !localStorage.getItem('suffering') ? null : putSufferingBack();
+
+
+  $('#focusInput').keypress(function (e) {
+    var key = e.which;
+    if(key == 13)  // the enter key code
+     {
+       var blaFocus = $('#focusInput').val();
+       localStorage.setItem('focus', blaFocus);
+       $("#focusInput").remove();
+       $(".focus").append("<h3 class='appended' id='focusAppended'></h3>");
+       $("#focusAppended").text(blaFocus);
+       $("#focusText").text('Do it now:');
+     }
+   }); 
+
+   !localStorage.getItem('focus') ? null : putItBack();
+
+   function putItBack() {
+    $("#focusInput").remove();
+    $(".focus").append("<h3 class='appended' id='focusAppended'></h3>");
+    $("#focusAppended").text(localStorage.getItem('focus'));
+    $("#focusText").text('Do it now:');
+  }
+
+  // ======== ATTACHEMENT ======== // 
+
+  $('#tooAttached').keypress(function (e) {
+    var key = e.which;
+    if(key == 13)  // the enter key code
+     {
+       var blaAttach = $('#tooAttached').val();
+       localStorage.setItem('attach', blaAttach);
+       $("#tooAttached").remove();
+       $("#attachment").append("<h3 class='appended' id='attachmentAppended'></h3>");
+       $("#attachmentAppended").text(blaAttach);
+       $("#tooAttachedText").text('Do that now');
+     }
+   }); 
+
+   !localStorage.getItem('attach') ? null : putAttachmentBack();
+
+   function putAttachmentBack() {
+    $("#tooAttached").remove();
+    $("#attachment").append("<h3 class='appended' id='attachmentAppended'></h3>");
+    $("#attachmentAppended").text(localStorage.getItem('attach'));
+    // $("#improvedTitle").text('Be ready to let it go');
+  }
+
+  // ======== IMPROVEMENT ======== // 
+
+  $('#improvedInput').keypress(function (e) {
+    var key = e.which;
+    if(key == 13)  // the enter key code
+     {
+        var toAdd = $('#improvedInput').val();
+         $('ul').append('<li>' + toAdd + '</li>');}
+         $('input').focus(function() {
+          $(this).val('');
+        });
+      //  var blaImproved = $('#improvedInput').val();
+      //  localStorage.setItem('improved', blaImproved);
+
+      //  $('#improvedBox').append(
+      //   $('<ul id="list">').append( 
+      //   $('<li>').append(
+      //           $('<span>').append(blaImproved)
+      // )));   
+
+      //  $("#improvedBox").append("<h3 class='appended' id='improvedAppended'></h3>");
+      //  $("#improvedAppended").text(blaImproved);
+      //  $("#improvedInputText").text('Do that now');
+   }); 
+
+   !localStorage.getItem('attach') ? null : putAttachmentBack();
+
+   function putAttachmentBack() {
+    $("#improvedInput").remove();
+    $("#attachment").append("<h3 class='appended' id='attachmentAppended'></h3>");
+    $("#attachmentAppended").text(localStorage.getItem('attach'));
+    $("#improvedInputText").text('Be ready to let it go');
+  }
 
 });

@@ -30,6 +30,11 @@ body {
     flex-direction: column;
 }
 
+.appended {
+    color: #fff;
+    font-size: 1.3em;
+}
+
 #toptop{
     text-align: center;
     font-size: 3em;
@@ -86,7 +91,7 @@ body {
 }
 
 input {
-    width: 80%; 
+    /* width: 80%;  */
     /* 370px; */
     background-color: #00000054;
     border-style: none;
@@ -99,9 +104,32 @@ input {
 
 input:focus {outline: none;}
 
+.inputButton {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    height: 32px;
+    border: none;
+    background-color: #4aeae6;
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #fb0092;
+    color: #fff;
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+
+
 /* ======== SUFFERING ========= */
  
-
+#suffering, #sufferingBoxTwo>input {width: 100%;}
+#sufferingBox {text-align: center; font-size: 1.3em !important;}
+/* #sufferingBox>h3 {text-align: initial;font-size: 1.25em !important;} */
 
 /* ======== ROW ONE ========= */
 
@@ -113,6 +141,8 @@ input:focus {outline: none;}
 }
 
 .box {
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     width: 45%;
     margin-bottom: 20px;

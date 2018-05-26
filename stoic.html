@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script> -->
   <script src="jquery.min.js"></script>
+  
 </head>
 
 <body>
@@ -33,19 +34,25 @@
         <h3 class="boxTitle">Voluntary Discomfort</h3>
         <span id="discomfort"></span>
       </div>
-      <div class="box">
-        <h3 class="boxTitle">How have I improved today?</h3>
-        <input type="text" id="improved">
+
+      <div class="box" id="improvedBox">
+        <h3 class="boxTitle" id="improvedTitle">How have I improved today?</h3>
+        <input type="text" id="improvedInput">
+        <ul></ul>
       </div>
-      <div class="box">
-        <h3 class="boxTitle">One thing you're too attached to:</h3>
+
+      <div class="box" id="attachment">
+        <h3 class="boxTitle" id="tooAttachedText">One thing you're too attached to:</h3>
         <input type="text" id="tooAttached">
       </div>
       <div class="box">
         <div id="sufferingBox">
             <h3 class="boxTitle" id="sufferingTitle">One thing making suffer currently:</h3>
-            <input type="text" id="suffering">
-            <button id="sufferingButton">Click</button>
+            <div class="inputButton">
+                <input type="text" id="suffering">
+                <button id="sufferingButton">Transform</button>
+            </div>
+            
         </div>
         <div id="sufferingBoxTwo">
           <h3 class="boxTitle" id"sufferingAnswer"></h3>
