@@ -171,3 +171,17 @@ p {
 #improved {
     width:80%;
 }
+
+/* ======== IMPROVE ========= */
+
+ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+li {
+    line-height: 1.6em;
+}

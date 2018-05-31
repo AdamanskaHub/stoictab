@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   function storeTime() {
     console.log("setting time")
-    localStorage.setItem('time',dd);
+    localStorage.setItem('time', dd);
   }
 
   !localStorage.getItem('time') ? storeTime() : isDateTheSame();
@@ -23,7 +23,7 @@ $(document).ready(function () {
     }
   }
 
-// ========= SUFFERING ======== // 
+  // ========= SUFFERING ======== // 
 
   $('#sufferingBoxTwo').hide();
 
@@ -48,20 +48,20 @@ $(document).ready(function () {
 
   $('#focusInput').keypress(function (e) {
     var key = e.which;
-    if(key == 13)  // the enter key code
-     {
-       var blaFocus = $('#focusInput').val();
-       localStorage.setItem('focus', blaFocus);
-       $("#focusInput").remove();
-       $(".focus").append("<h3 class='appended' id='focusAppended'></h3>");
-       $("#focusAppended").text(blaFocus);
-       $("#focusText").text('Do it now:');
-     }
-   }); 
+    if (key == 13)  // the enter key code
+    {
+      var blaFocus = $('#focusInput').val();
+      localStorage.setItem('focus', blaFocus);
+      $("#focusInput").remove();
+      $(".focus").append("<h3 class='appended' id='focusAppended'></h3>");
+      $("#focusAppended").text(blaFocus);
+      $("#focusText").text('Do it now:');
+    }
+  });
 
-   !localStorage.getItem('focus') ? null : putItBack();
+  !localStorage.getItem('focus') ? null : putItBack();
 
-   function putItBack() {
+  function putItBack() {
     $("#focusInput").remove();
     $(".focus").append("<h3 class='appended' id='focusAppended'></h3>");
     $("#focusAppended").text(localStorage.getItem('focus'));
@@ -72,20 +72,20 @@ $(document).ready(function () {
 
   $('#tooAttached').keypress(function (e) {
     var key = e.which;
-    if(key == 13)  // the enter key code
-     {
-       var blaAttach = $('#tooAttached').val();
-       localStorage.setItem('attach', blaAttach);
-       $("#tooAttached").remove();
-       $("#attachment").append("<h3 class='appended' id='attachmentAppended'></h3>");
-       $("#attachmentAppended").text(blaAttach);
-       $("#tooAttachedText").text('Do that now');
-     }
-   }); 
+    if (key == 13)  // the enter key code
+    {
+      var blaAttach = $('#tooAttached').val();
+      localStorage.setItem('attach', blaAttach);
+      $("#tooAttached").remove();
+      $("#attachment").append("<h3 class='appended' id='attachmentAppended'></h3>");
+      $("#attachmentAppended").text(blaAttach);
+      $("#tooAttachedText").text('Do that now');
+    }
+  });
 
-   !localStorage.getItem('attach') ? null : putAttachmentBack();
+  !localStorage.getItem('attach') ? null : putAttachmentBack();
 
-   function putAttachmentBack() {
+  function putAttachmentBack() {
     $("#tooAttached").remove();
     $("#attachment").append("<h3 class='appended' id='attachmentAppended'></h3>");
     $("#attachmentAppended").text(localStorage.getItem('attach'));
@@ -94,36 +94,25 @@ $(document).ready(function () {
 
   // ======== IMPROVEMENT ======== // 
 
+  var chiffre = 0;
   $('#improvedInput').keypress(function (e) {
     var key = e.which;
-    if(key == 13)  // the enter key code
-     {
-        var toAdd = $('#improvedInput').val();
-         $('ul').append('<li>' + toAdd + '</li>');}
-         $('input').focus(function() {
-          $(this).val('');
-        });
-      //  var blaImproved = $('#improvedInput').val();
-      //  localStorage.setItem('improved', blaImproved);
+    if (key == 13)  // the enter key code
+    {
+      var toAdd = $('#improvedInput').val();
+      $('ul').append('<li>' + toAdd + '</li>');
+      $('input').val('');
+      chiffre = chiffre + 1;
+    };
+    localStorage.setItem('improved' + chiffre, toAdd);
+  });
 
-      //  $('#improvedBox').append(
-      //   $('<ul id="list">').append( 
-      //   $('<li>').append(
-      //           $('<span>').append(blaImproved)
-      // )));   
+  !localStorage.getItem('improved') ? null : putImprovementBack();
 
-      //  $("#improvedBox").append("<h3 class='appended' id='improvedAppended'></h3>");
-      //  $("#improvedAppended").text(blaImproved);
-      //  $("#improvedInputText").text('Do that now');
-   }); 
-
-   !localStorage.getItem('attach') ? null : putAttachmentBack();
-
-   function putAttachmentBack() {
-    $("#improvedInput").remove();
-    $("#attachment").append("<h3 class='appended' id='attachmentAppended'></h3>");
-    $("#attachmentAppended").text(localStorage.getItem('attach'));
-    $("#improvedInputText").text('Be ready to let it go');
+  function putImprovementBack() {
+    for (var i = 0; i < chiffre; i++) {
+      console.log(localStorage.getItem('improved'+i))
+    }
   }
 
 });
