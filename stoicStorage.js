@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
   var d = new Date();
-  var dd = d.getMinutes();
+  var dd = d.getDay();
 
   function storeTime() {
     console.log("setting time")
