@@ -66,12 +66,44 @@ $(document).ready(function(){
         author: "Seneca"
       },
       {
+        quote: "A gem cannot be polished without friction, nor a man perfected without trials.",
+        author: "Seneca"
+      },
+      {
+        quote: "Whatever fortune has raised to a height, she has raised only to cast it down.",
+        author: "Seneca"
+      },
+      {
         quote: "Nothing is burdensome if taken lightly, and nothing need arouse one's irritation so long as one doesn't make it bigger than it is by getting irritated.",
         author: "Epictetus"
       },
       {
         quote: "Even the least of our activities ought to have some end in view.",
         author: "Marcus Aurelius"
+      },
+      {
+        quote: "Everything we hear is an opinion, not a fact.",
+        author: "Marcus Aurelius"
+      },
+      {
+        quote: "You have power over your mind.",
+        author: "Marcus Aurelius"
+      },
+      {
+        quote: "The soul becomes dyed with the colour of its thoughts.",
+        author: "Marcus Aurelius"
+      },
+      {
+        quote: "Reject your sense of injury and the injury itself disappear.",
+        author: "Marcus Aurelius"
+      },
+      {
+        quote: "People are not disturbed by things, but by the view they take of them.",
+        author: "Epictetus"
+      },
+      {
+        quote: "If evil be spoken of you and it be true, correct yourself, if it be a lie, laugh at it.",
+        author: "Epictetus"
       },
       {quote:"Remember, it is not enough to be hit or insulted to be harmed, you must believe that you are being harmed. If someone succeeds in provoking you, realize that your mind is complicit in the provocation.",
       author: "Epictetus"},

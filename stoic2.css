@@ -1,22 +1,7 @@
-
-:root {
-    --gradient-a: #8d0d9687;
-    --gradient-b: #280077a8;
-    --text-colour: #d6c0ff;
-    --input-colour: #b699ec;
-    --title: #d28efd;
-    /* --gradient-a: #109fbf87;
-    --gradient-b: #001a77a8;
-    --text-colour: #bae6ff;
-    --input-colour: #99baec;
-    --title: #89b1e2; */
-}
-
 html {
     height: 100%;
-    background-image: linear-gradient(90deg, var(--gradient-a) 0%, var(--gradient-b) 100%), url(water.jpg);
+    background: linear-gradient(to bottom right,#238383, #6A2A80);
     font-family: 'Raleway', sans-serif;
-    
 }
 
 body {
@@ -46,27 +31,27 @@ body {
 }
 
 .appended {
-    color: var(--text-colour);
+    color: #fff;
     font-size: 1.3em;
 }
 
-/* #toptop{
+#toptop{
     text-align: center;
     font-size: 3em;
     line-height: 1em;
     font-family: 'Permanent Marker', cursive;
     color:#002b2a;
+    /* background-color: rgba(0,0,0,0.34); */
     padding:15px;
     align-self: flex-start;    
     margin-top: 10px;
-} */
+}
 
 #quoteType{
     font-size: 1.6em;
     font-family: 'PT Serif', serif;
-    color: #cb79ff;
-    /* color: #7babdc; */
-    background-color: rgba(0, 0, 0, 0.6);
+    color:#4FE8E6;
+    background-color: rgba(0,0,0,0.34);
     padding:15px;
     align-self: flex-start;    
     margin-top: 10px;
@@ -75,8 +60,8 @@ body {
 #quoteSrc{
     align-self: flex-end;
     font-family: 'Raleway', sans-serif;
-    color: #a9a4d49e;
-    background-color: #00000070;
+    color: #fdd6b570;
+    background-color: #00000054;
     padding: 0 4px;
 }
 
@@ -89,7 +74,7 @@ body {
 }
 
 .appended {
-    color: var(--text-colour);
+    color: #fff;
     font-size: 1.1em;
     margin: 0;
 }
@@ -112,12 +97,12 @@ body {
 input {
     /* width: 80%;  */
     /* 370px; */
-    background-color: #0000005e;
+    background-color: #00000054;
     border-style: none;
-    height: 36px;
-    /* border: 2px solid #00000038; */
+    height: 30px;
+    border: 2px solid #00000038;
     font-size: 1.3em;
-    color: var(--input-colour);
+    color: #FDD6B5;;
     padding: 0 10px;
 }
 
@@ -126,6 +111,21 @@ input:focus {outline: none;}
 .inputButton {
     display: flex;
     align-items: center;
+}
+
+button {
+    height: 32px;
+    border: none;
+    background-color: #4aeae6;
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #fb0092;
+    color: #fff;
+    font-size: 1.1em;
+    margin-left: 10px;
 }
 
 #focusAppended {
@@ -169,14 +169,18 @@ input:focus {outline: none;}
 .boxTitle{
     margin: 0;
     margin-bottom: 10px;
-    color: var(--title);
+    color: #4ee9e6;
     font-size: 1.25em;
     font-weight: normal;
 }
 
 #negVisu, #discomfort, #sufferingBox {
-    color: var(--text-colour);
+    color: #fff;
     font-size: 1.1em;
+}
+
+p {
+    color:#333;
 }
 
 #improved {
@@ -189,7 +193,7 @@ ul {
     margin: 10px 0;
     padding: 0;
     list-style: none;
-    color: var(--text-colour);
+    color: #fff;
     font-size: 1.15em;
 }
 
