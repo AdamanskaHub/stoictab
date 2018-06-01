@@ -57,8 +57,6 @@ body {
     margin-top: 10px;
 }
 
-
-
 #quoteSrc{
     align-self: flex-end;
     font-family: 'Raleway', sans-serif;
@@ -73,6 +71,12 @@ body {
     justify-content: center;
     flex-direction: column;
     align-content: center;
+}
+
+.appended {
+    color: #fff;
+    font-size: 1.1em;
+    margin: 0;
 }
 
 
@@ -184,4 +188,10 @@ ul {
 
 li {
     line-height: 1.6em;
+}
+
+/* ======== ATTACHMENT ========= */
+
+#attachment {
+    align-self: flex-start;
 }
